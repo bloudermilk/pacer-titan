@@ -1,7 +1,7 @@
 require "yaml"
 
 module Pacer
-  TitanEdge = com.tinkerpop.blueprints.Edge
+  TitanEdge = com.thinkaurelius.titan.core.TitanEdge
 
   # Extend the java class imported from Titan.
   class TitanEdge
