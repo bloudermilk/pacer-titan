@@ -7,6 +7,8 @@
 This plugin enables [Titan](http://thinkaurelius.github.com/titan/) graph
 support in Pacer.
 
+**Warning:** This gem is in the earliest of alpha phases.
+
 
 ## Usage
 
