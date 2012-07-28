@@ -12,13 +12,15 @@ support in Pacer.
 
 Here is how you open a Titan graph in Pacer.
 
-  require 'pacer'
-  require 'pacer-titan'
+```ruby
+require "pacer"
+require "pacer-titan"
 
-  # Graph will be created if it doesn't exist
-  graph = Pacer.titan 'path/to/graph'
+# Graph will be created if it doesn"t exist
+graph = Pacer.titan "path/to/graph"
+```
 
 All other operations are identical across graph implementations (except
-where certain features are not supported). See Pacer's documentation for
+where certain features are not supported). See Pacer"s documentation for
 more information.
 
