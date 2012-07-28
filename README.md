@@ -16,7 +16,7 @@ Here is how you open a Titan graph in Pacer.
 require "pacer"
 require "pacer-titan"
 
-# Graph will be created if it doesn"t exist
+# Graph will be created if it doesn't exist
 graph = Pacer.titan "path/to/graph"
 ```
 
