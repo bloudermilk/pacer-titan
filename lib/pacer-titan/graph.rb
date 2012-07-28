@@ -1,8 +1,9 @@
 require "yaml"
 
 module Pacer
-  TitanGraph = com.thinkaurelius.titan.core.TitanGraph
-  TitanElement = com.thinkaurelius.titan.core.TitanElement
+  TitanGraph = com.thinkaurelius.titan.graphdb.database.StandardTitanGraph
+  TitanFactory = com.thinkaurelius.titan.core.TitanFactory
+  #TitanElement = com.thinkaurelius.titan.core.TitanElement
 
   # Add "static methods" to the Pacer namespace.
   class << self
@@ -14,11 +15,10 @@ module Pacer
     # Ruby"s at_exit callback, but if an already open graph is given, it will
     # not.
     def titan(path)
-        path = File.expand_path(path_or_graph)
+      path = File.expand_path(path)
 
-        Pacer.starting_graph(self, path) do
-          TitanGraph.new(path)
-        end
+      Pacer.starting_graph(self, path) do
+        TitanFactory.open(path)
       end
     end
   end
