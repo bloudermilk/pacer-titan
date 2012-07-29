@@ -19,7 +19,7 @@ require "pacer"
 require "pacer-titan"
 
 # Graph will be created if it doesn't exist
-graph = Pacer.titan "path/to/graph"
+graph = Pacer.titan "path/to/config.properties"
 ```
 
 All other operations are identical across graph implementations (except
