@@ -1,7 +1,7 @@
 require "yaml"
 
 module Pacer
-  TitanVertex = com.tinkerpop.blueprints.Vertex
+  TitanVertex = com.thinkaurelius.titan.graphdb.vertices.StandardTitanVertex
 
   # Extend the java class imported from Titan.
   class TitanVertex

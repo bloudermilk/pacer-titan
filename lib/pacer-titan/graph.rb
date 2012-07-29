@@ -3,7 +3,7 @@ require "yaml"
 module Pacer
   TitanGraph = com.thinkaurelius.titan.graphdb.database.StandardTitanGraph
   TitanFactory = com.thinkaurelius.titan.core.TitanFactory
-  #TitanElement = com.thinkaurelius.titan.core.TitanElement
+  TitanElement = com.thinkaurelius.titan.graphdb.relations.AbstractTypedRelation
 
   # Add "static methods" to the Pacer namespace.
   class << self
@@ -22,7 +22,6 @@ module Pacer
       end
     end
   end
-
 
   # Extend the java class imported from Titan.
   class TitanGraph

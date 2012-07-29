@@ -1,7 +1,7 @@
 require "yaml"
 
 module Pacer
-  TitanEdge = com.thinkaurelius.titan.core.TitanEdge
+  TitanEdge = com.thinkaurelius.titan.graphdb.relations.SimpleTitanEdge
 
   # Extend the java class imported from Titan.
   class TitanEdge
